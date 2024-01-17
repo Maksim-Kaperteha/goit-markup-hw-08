@@ -803,36 +803,36 @@ img {
   background: rgba(47, 48, 58, 0.4);
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: url(/images/Hero/hero_overlay_sm.png), url(/images/Hero/hero_sm.png);
+  background-image: url(../images/Hero/hero_overlay_sm.png), url(../images/Hero/hero_sm.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/Hero/hero_overlay_sm.png), url(/images/Hero/hero_sm@2x.png);
+    background-image: url(../images/Hero/hero_overlay_sm.png), url(../images/Hero/hero_sm@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(/images/Hero/hero_overlay_md.png), url(/images/Hero/hero_md.png);
+    background-image: url(../images/Hero/hero_overlay_md.png), url(../images/Hero/hero_md.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/Hero/hero_overlay_md.png), url(/images/Hero/hero_md@2x.png);
+    background-image: url(../images/Hero/hero_overlay_md.png), url(../images/Hero/hero_md@2x.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: url(/images/Hero/hero_overlay_lg.png), url(/images/Hero/hero_lg.png);
+    background-image: url(../images/Hero/hero_overlay_lg.png), url(../images/Hero/hero_lg.png);
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/Hero/hero_overlay_lg.png), url(/images/Hero/hero_lg@2x.png);
+    background-image: url(../images/Hero/hero_overlay_lg.png), url(../images/Hero/hero_lg@2x.png);
   }
 }
 
@@ -995,9 +995,6 @@ img {
 }
 
 /* Section-gallery */
-.gallery {
-  max-width: 1600px;
-}
 @media screen and (min-width: 480px) {
   .gallery {
     display: none;
