@@ -1,0 +1,122 @@
+/* Section-team */
+.section.team {
+  @include mq(mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.container .list-team {
+  display: flex;
+  @include mq(mobile) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include mq(tablet) {
+    margin: -15px;
+  }
+}
+.team {
+  background: var(--bacground-section--);
+}
+
+.title {
+  color: var(--black-cl--);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.item-navigation-team {
+  background-color: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  @include mq(desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.item-navigation-team {
+  @include mq(tablet-only) {
+    margin: 15px;
+  }
+  @include mq(mobile-only) {
+    margin-right: 0;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.team-img {
+  display: block;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.uppertitle-team {
+  border-radius: 0px 0px 4px 4px;
+  color: var(--black-cl--);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.subtitle-team {
+  border-radius: 0px 0px 4px 4px;
+  color: var(--silver-cl--);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--white-cl--);
+  transition: background var(--animation-time--);
+  &:hover,
+  &:focus {
+    background-color: var(--blue-cl--);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: var(--white-cl--);
+  }
+}
+.socials-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icons--);
+  transition: fill var(--animation-time--);
+}
