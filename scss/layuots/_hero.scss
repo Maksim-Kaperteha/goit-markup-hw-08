@@ -1,0 +1,91 @@
+/* Section-hero */
+.hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgba(47, 48, 58, 0.4);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: url(/images/Hero/hero_overlay_sm.png),
+    url(/images/Hero/hero_sm.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include mq(retina) {
+    background-image: url(/images/Hero/hero_overlay_sm.png),
+      url(/images/Hero/hero_sm@2x.png);
+  }
+  @include mq(tablet) {
+    background-image: url(/images/Hero/hero_overlay_md.png),
+      url(/images/Hero/hero_md.png);
+    @include mq(retina) {
+      background-image: url(/images/Hero/hero_overlay_md.png),
+        url(/images/Hero/hero_md@2x.png);
+    }
+  }
+  @include mq(desktop) {
+    background-image: url(/images/Hero/hero_overlay_lg.png),
+      url(/images/Hero/hero_lg.png);
+    @include mq(retina) {
+      background-image: url(/images/Hero/hero_overlay_lg.png),
+        url(/images/Hero/hero_lg@2x.png);
+    }
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero-title {
+  @include mq(mobile) {
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    color: var(--white-cl--);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    text-transform: uppercase;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 4px;
+  background: var(--blue-cl--);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--white-cl--);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.96px;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: color var(--animation-time--), bacground var(--animation-time--);
+
+  &:hover,
+  &:focus {
+    color: var(--white-cl--);
+    background: var(--bacground-btn--);
+  }
+}
