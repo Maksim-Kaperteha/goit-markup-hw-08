@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     margin: -15px;
   }
 }
