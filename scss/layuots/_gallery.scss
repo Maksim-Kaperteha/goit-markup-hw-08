@@ -1,6 +1,5 @@
 /* Section-gallery */
 .gallery {
-  max-width: 1600px;
   @include mq(mobile) {
     display: none;
   }
