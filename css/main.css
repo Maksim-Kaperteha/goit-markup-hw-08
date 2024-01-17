@@ -995,6 +995,9 @@ img {
 }
 
 /* Section-gallery */
+.gallery {
+  max-width: 1600px;
+}
 @media screen and (min-width: 480px) {
   .gallery {
     display: none;
