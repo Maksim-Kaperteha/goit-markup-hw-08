@@ -12,6 +12,7 @@
 }
 .list-gallery {
   display: flex;
+  justify-content: center;
 }
 
 .gallery-item:not(:last-child) {

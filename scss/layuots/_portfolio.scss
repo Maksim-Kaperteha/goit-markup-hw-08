@@ -66,8 +66,12 @@
 
 .container .list-portfolio {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  @include mq(tablet-only) {
+    justify-content: normal;
+  }
 }
 
 .item-pf {
