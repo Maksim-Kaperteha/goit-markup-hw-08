@@ -1,5 +1,5 @@
 /* Section-portfolio */
-span {
+.span-pf {
   @include mq(mobile-only) {
     display: none;
   }
