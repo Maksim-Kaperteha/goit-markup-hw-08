@@ -1,4 +1,12 @@
 /* Section-portfolio */
+span {
+  @include mq(mobile-only) {
+    display: none;
+  }
+  @include mq(desktop) {
+    display: none;
+  }
+}
 .container .list-filters {
   display: flex;
   justify-content: center;
