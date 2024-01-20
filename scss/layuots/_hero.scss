@@ -6,29 +6,47 @@
   background: rgba(47, 48, 58, 0.4);
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: url(../images/Hero/hero_overlay_sm.png),
-    url(../images/Hero/hero_sm.png);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Hero/hero_sm.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include mq(retina) {
-    background-image: url(../images/Hero/hero_overlay_sm.png),
-      url(../images/Hero/hero_sm@2x.png);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Hero/hero_sm@2x.jpg);
   }
   @include mq(tablet) {
-    background-image: url(../images/Hero/hero_overlay_md.png),
-      url(../images/Hero/hero_md.png);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Hero/hero_md.jpg);
     @include mq(retina) {
-      background-image: url(../images/Hero/hero_overlay_md.png),
-        url(../images/Hero/hero_md@2x.png);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Hero/hero_md@2x.jpg);
     }
   }
   @include mq(desktop) {
-    background-image: url(../images/Hero/hero_overlay_lg.png),
-      url(../images/Hero/hero_lg.png);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Hero/hero_lg.jpg);
     @include mq(retina) {
-      background-image: url(../images/Hero/hero_overlay_lg.png),
-        url(../images/Hero/hero_lg@2x.png);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Hero/hero_lg@2x.jpg);
     }
     padding-top: 200px;
     padding-bottom: 200px;
@@ -36,6 +54,19 @@
 }
 
 .hero-title {
+  @include mq(sm-mobile) {
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
   @include mq(mobile) {
     color: #fff;
     text-align: center;

@@ -7,6 +7,10 @@
 }
 .container .list-team {
   display: flex;
+  @include mq(sm-mobile) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   @include mq(mobile) {
     flex-wrap: wrap;
     justify-content: center;

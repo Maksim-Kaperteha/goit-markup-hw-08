@@ -1,5 +1,8 @@
 /* Section-gallery */
 .gallery {
+  @include mq(sm-mobile) {
+    display: none;
+  }
   @include mq(mobile) {
     display: none;
   }

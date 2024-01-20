@@ -4,6 +4,9 @@
 }
 .header__container {
   display: flex;
+  @include mq(sm-mobile-only) {
+    width: 100vw;
+  }
   @include mq(mobile-only) {
     display: flex;
     flex-direction: column-reverse;
@@ -64,7 +67,6 @@
   right: 0;
   margin-top: 10px;
 }
-
 
 .header__list {
   @include mq(mobile-only) {

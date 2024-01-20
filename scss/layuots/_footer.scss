@@ -210,8 +210,6 @@
 }
 
 .form-input {
-  width: 358px;
-  height: 50px;
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -223,11 +221,18 @@
   line-height: 20px;
   letter-spacing: 0.48px;
   padding-left: 16px;
-  @include mq(mobile-only) {
+  @include mq(sm-mobile) {
+    width: 290px;
+  }
+  @include mq(mobile) {
     width: 450px;
   }
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     width: 450px;
+  }
+  @include mq(desktop) {
+    width: 358px;
+    height: 50px;
   }
 }
 
@@ -241,7 +246,7 @@
   position: relative;
   width: 200px;
   height: 50px;
-  margin-left: 20px;
+  margin-left: 12px;
   @include mq(mobile-only) {
     margin-top: 20px;
   }
