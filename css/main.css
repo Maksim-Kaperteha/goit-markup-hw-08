@@ -127,6 +127,12 @@ img {
   transition: transform var(--animation-time--), -webkit-transform var(--animation-time--);
   padding: 40px;
 }
+@media screen and (max-width: 479.98px) {
+  .modal-wraper {
+    width: 300px;
+    padding: 20px;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal-wraper {
     width: 450px;
@@ -182,6 +188,11 @@ img {
   line-height: normal;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 479.98px) {
+  .form-modal-title {
+    font-size: 15px;
+  }
 }
 
 .form-field {
@@ -246,11 +257,11 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-
-.modal-form-text:focus {
-  outline: 0;
+@media screen and (max-width: 479.98px) {
+  .modal-form-text {
+    height: 90px;
+  }
 }
-
 .modal-form-text:-moz-placeholder-shown {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
@@ -258,7 +269,6 @@ img {
   line-height: normal;
   letter-spacing: 0.12px;
 }
-
 .modal-form-text:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
@@ -266,13 +276,16 @@ img {
   line-height: normal;
   letter-spacing: 0.12px;
 }
-
 .modal-form-text:placeholder-shown {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
+}
+
+.modal-form-text:focus {
+  outline: 0;
 }
 
 /* Checkbox */
@@ -340,6 +353,11 @@ img {
   line-height: 1.7;
   letter-spacing: 0.42px;
 }
+@media screen and (max-width: 479.98px) {
+  .form-policy-desc {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 480px) {
   .form-policy-desc {
     font-size: 12px;
@@ -360,6 +378,11 @@ img {
   font-weight: 400;
   letter-spacing: 0.42px;
   text-decoration-line: underline;
+}
+@media screen and (max-width: 479.98px) {
+  .form-policy-link {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 480px) {
   .form-policy-link {
@@ -394,6 +417,12 @@ img {
   line-height: 30px;
   letter-spacing: 0.96px;
   cursor: pointer;
+}
+@media screen and (max-width: 479.98px) {
+  .btn-modal-form {
+    width: 150px;
+    margin-top: 15px;
+  }
 }
 
 .menu__content {
@@ -2111,6 +2140,13 @@ img {
           transform: translateY(100%);
   -webkit-transition: var(--animation-time--);
   transition: var(--animation-time--);
+}
+@media screen and (max-width: 479.98px) {
+  .portfolio-title {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .list-portfolio .portfolio-link:hover .portfolio-title,

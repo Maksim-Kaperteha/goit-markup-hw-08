@@ -132,6 +132,11 @@
   padding: 63px 24px;
   transform: translateY(100%);
   transition: var(--animation-time--);
+  @include mq(sm-mobile-only) {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .list-portfolio .portfolio-link:hover .portfolio-title,
