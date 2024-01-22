@@ -332,6 +332,11 @@ img {
   border: 2px solid black;
   border-radius: 2px;
 }
+@media screen and (max-width: 479.98px) {
+  .icon-checkbox {
+    left: 0;
+  }
+}
 
 .custom-checkbox-icon {
   position: absolute;
@@ -343,9 +348,16 @@ img {
   border-radius: 2px;
   padding: 2px;
 }
+@media screen and (max-width: 479.98px) {
+  .custom-checkbox-icon {
+    left: 0;
+  }
+}
 
 .form-policy-desc {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 7px;
   color: #757575;
   font-size: 14px;
